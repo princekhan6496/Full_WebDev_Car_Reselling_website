@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav">
+                <div class="logo">
+                    <img src="LOGO.png" alt="DreamNex Logo">
+                    <div class="name">DreamNex</div>
+                </div>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="profile.html" class="active">Profile</a>
+            </nav>
+        </div>
+    </header>
+    <div class="profile-container">
+        <div class="profile-card1">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="userimg.jpg" alt="Profile Picture" id="profileImage">
+                </div>
+                <p class="user-role">Bio</p>
+                <p class="user-role" id="Bio"></p>
+            </div>
+            <div id="profileInfo" class="profile">
+                <p>First Name: <span id="fname"></span></p>
+                <p>Last Name: <span id="lname"></span></p>
+                <p>Email: <span id="email"></span></p>
+                <p>Mobile Number: <span id="Mno"></span></p>
+            </div>
+            <div class="profile-actions">
+                <button id="editBtn" class="edit-profile">Edit Profile</button>
+                <button id="logoutBtn" class="edit-profile">Logout</button>
+            </div>
+        </div>
+
+   <div id="profile-card2" class="profile-card2">
+    <div class="profile-image">
+        <img src="userimg.jpg" alt="Profile Picture" id="profileImage">
+    </div>
+    <form id="editProfileForm" action="/edit-profile" method="POST">
+        <div class="input"><label>Bio : </label> <input id="BioFor" type="text" name="Bio" required></div>
+        <div class="input"><label>First Name : </label> <input type="text" name="fname" required></div>
+        <div class="input"><label>Last Name : </label> <input type="text" name="lname" required></div>
+        <div class="input"><label>Email-id : </label><input type="email" name="email" required></div>
+        <div class="input"><label>Mobile no : </label><input type="tel" name="Mno" required></div>
+        <div class="input"><label>Password : </label><input type="password" name="password" required></div>
+    <div class="profile-actions2">
+        <button type="submit" class="edit-profile">Update profile</button>
+    </div>
+</form></div>
+        
+    </div>
+      
+   
+
+
+    <div class="last">
+        <div class="lower"> <pre>
+               <b>Headquarters</b><br><br>
+               Plot No. 134, Sector 37,
+               Pace City 1, Gurgaon Haryana, 122001,
+               India
+              &#128231; sales@DreamNex.com
+           </pre>
+           <pre>
+              <b>Studio</b><br><br>
+              7, Hubtown Sunmist, Opposite Hubtown Solaris,
+              Telli Galli, Andheri East,
+              N S Phadke Marg, Mumbai - 400053
+           </pre>
+           <pre>
+               <b>Buy Car</b><br><br>
+              &#x1F4DE;(+91) 9999 9999 83
+              &#x1F4DE;(+91) 124 4666666
+           </pre>
+           <pre>
+               <b>Sell Your Car</b><br><br>
+               &#x1F4DE;(+91) 9999 9999 15
+           </pre>
+       </div>
+       <p>Copyright © 2024 DreamNex</p>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Levarage.com/login</title>
+    <caption></caption>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="LOGO.png" alt="DreamNex Logo">
+            <div class="name">DreamNex</div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <form id="loginform" action="/login" method="POST">
+            <h1>Login</h1>
+            <div class="input"> <input type="text" name="username" required><label>Username</label></div>
+            <div class="input"><input type="password" name="password" required><label> Password</label></div>
+           <div id="block"><div class="remember">
+            <label><input type="checkbox">Remember me </label></div>
+            <div id="forget"><a href="signup.html" >forget password?</a></div></div> 
+
+                 <button type="submit" class="Btn">Login</button>
+            
+            <div class="signup">
+                <p>Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(backg.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+   background: none;
+    color: #399292;
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #399292;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: large;
+}
+
+nav a.active {
+    border-bottom: 2px solid #14849d;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.profile-card1,.profile-card2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.profile-header {
+    height: 25vh;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.profile-actions,.profile-actions2 {
+    margin-top: 20px;
+}
+.edit-profile{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile:hover{
+    background-color: #0056b3;
+}
+
+.logo {
+    display: flex;
+    background: none;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    background: none;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #0066cc;
+    padding-top: 43px;
+    background: none;
+}
+.lower {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 145px;
+    background: none;
+   border-bottom: solid #399292;
+}
+.lower pre{
+    background: none;
+    color: #cacaca;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lower pre b{
+    background: none;
+}
+.last{
+    
+   background-color: black;
+    padding: 20px;
+    height: 200px;
+}
+.last p{
+    background: none;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+#editProfileForm{
+
+    display: block;
+    flex-direction: column;
+}
+
+.input{
+    display: block;
+    padding-bottom: 10px;
+}
+input{
+    border: none;
+    cursor: text;
+    border-bottom: solid 2px#399292;
+}
+.profile-card2{
+    display: none;
+}
+#logout:hover{
+  background-color: #9c0707;
+}
+.profile-actions{
+    display: flex;
+    justify-content: space-between;
+}
